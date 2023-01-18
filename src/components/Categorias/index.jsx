@@ -1,5 +1,13 @@
+import { NavStyle } from "./style";
+
 export const Categorias = () =>{
     return(
-        <p>oi</p>
+        <NavStyle>
+            <ul>
+                <li>Celulares</li>
+                <li>computadores</li>
+                <li>outros</li>      
+            </ul>
+        </NavStyle>
     )
 };

@@ -1,10 +1,7 @@
-import { Categorias } from "../Categorias";
 import { HeaderStyle } from "./style";
 
 export const Header = () => {
-    function handOnSubmit(e){
-        e.prevendefault();
-    }
+
     return(
         <HeaderStyle>
             <div className="constainer">
@@ -12,12 +9,21 @@ export const Header = () => {
                 {/* eslint-disable-next-line */}
                     <a href="#">My Shop</a>
                 </div>
-                <form onSubmit={handOnSubmit}>
-                    <input type="text" placeholder="pesquisar..."/>
-                    <button>Procurar</button>
-                </form>
+                <div className="lin">
+                    <nav>
+                        <ul>
+                            {/* eslint-disable-next-line */}
+                            <li><a href="#">Sobre</a></li>
+                            {/* eslint-disable-next-line */}
+                            <li><a href="#">Contato</a></li>
+                            {/* eslint-disable-next-line */}
+                            <li><a href="#">Categorias</a></li>
+                            {/* eslint-disable-next-line */}
+                            <li><a href="#">Carrinho</a></li>
+                        </ul>
+                    </nav>
+                </div>
             </div>
-            <Categorias />
         </HeaderStyle>
     )
 };

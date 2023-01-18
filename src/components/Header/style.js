@@ -2,44 +2,40 @@ import styled from "styled-components";
 
 export const HeaderStyle = styled.header`
     .constainer{
-        margin: 0;
         font-family: Arial, Helvetica, sans-serif;
         display: flex;
         align-items: center;
-        justify-content: space-around;
-        height: 100px;
-        width: 100%;
-        box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.50);
+        justify-content: space-between;
+        height: 70px;
+        width: 1200px;
+        margin: auto;
+        padding: 20px 0;
+
+        .logo a{
+            color: #000;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 2em;
+        } 
+
+        nav ul{
+            display: flex;
+            flex-direction: row;
+
+            li{
+                list-style-type: none;
+                a{
+                   color: #000;
+                   text-decoration: none;
+                   margin: 0 5px;
+                   font-size: 1.2em;
+                }
+            }
+        }
     }
    
-    .logo a{
-        color: #000;
-        text-decoration: none;
-        font-weight: bold;
-        font-size: 2em;
-    } 
+   
 
-    form {
-        input{
-            outline: none;
-            border: none;
-            background-color: transparent;
-            border-bottom: 1px solid #000;
-            padding: 5px;
-            margin: 0 10px;
-            max-width: 400px;
-            min-width: 200px;
-        }
-
-        button{
-            background-color: transparent;
-            outline: none;
-            cursor: pointer;
-            padding: 10px;
-            border: 1px solid #000;
-            border-radius: 5px;
-        }
-    }
 
 
 `;
