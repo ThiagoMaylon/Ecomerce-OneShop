@@ -1,3 +1,4 @@
+import { Link, NavLink } from "react-router-dom";
 import { HeaderStyle } from "./style";
 
 export const Header = () => {
@@ -7,19 +8,17 @@ export const Header = () => {
             <div className="constainer">
                 <div className="logo">
                 {/* eslint-disable-next-line */}
-                    <a href="#">My Shop</a>
+                    <NavLink to="/"><span>One</span>Shope</NavLink>
                 </div>
                 <div className="lin">
                     <nav>
                         <ul>
                             {/* eslint-disable-next-line */}
-                            <li><a href="#">Sobre</a></li>
+                            <li><Link to="/">Inicio</Link></li>
                             {/* eslint-disable-next-line */}
-                            <li><a href="#">Contato</a></li>
+                            <li><a href="#contato">Contato</a></li>
                             {/* eslint-disable-next-line */}
-                            <li><a href="#">Categorias</a></li>
-                            {/* eslint-disable-next-line */}
-                            <li><a href="#">Carrinho</a></li>
+                            <li><Link to="/car" >Carrinho</Link></li>
                         </ul>
                     </nav>
                 </div>

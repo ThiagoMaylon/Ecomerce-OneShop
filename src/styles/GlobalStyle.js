@@ -7,4 +7,8 @@ export const GlobalStyle = createGlobalStyle`
         box-sizing: border-box;
         font-family: arial;
     }
+
+    html{
+        scroll-behavior: smooth;
+    }
 `;

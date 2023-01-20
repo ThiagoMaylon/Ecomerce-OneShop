@@ -2,6 +2,8 @@ import { Header } from "../components/Header";
 import { useEffect, useState } from "react"
 import { Produtos } from "../components/Produtos";
 import { HomeStyle } from "./style";
+import { Footer } from "../components/Footer";
+import { PesquisaProduto } from "../components/PesquisaProduto";
 
 function App() {
   // eslint-disable-next-line
@@ -17,7 +19,7 @@ function App() {
   return (
     <HomeStyle>
       <Header />
-
+      <PesquisaProduto />
       <main>
         {produtos.map((produto) => (
           <Produtos 
@@ -29,6 +31,7 @@ function App() {
           />
         ))}
       </main>
+      <Footer />
     </HomeStyle>
   );
 }

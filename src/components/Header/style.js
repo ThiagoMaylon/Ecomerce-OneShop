@@ -16,6 +16,10 @@ export const HeaderStyle = styled.header`
             text-decoration: none;
             font-weight: bold;
             font-size: 2em;
+
+            span{
+                color: #999;
+            }
         } 
 
         nav ul{
@@ -29,6 +33,10 @@ export const HeaderStyle = styled.header`
                    text-decoration: none;
                    margin: 0 5px;
                    font-size: 1.2em;
+
+                   &:hover{
+                    color: #aaa;
+                   }
                 }
             }
         }
