@@ -7,7 +7,7 @@ export const Header = () => {
         <HeaderStyle>
             <div className="constainer">
                 <div className="logo">
-                {/* eslint-disable-next-line */}
+                    {/* eslint-disable-next-line */}
                     <NavLink to="/"><span>One</span>Shope</NavLink>
                 </div>
                 <div className="lin">

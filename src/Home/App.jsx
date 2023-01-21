@@ -1,4 +1,4 @@
-import { Header } from "../components/Header";
+
 import { useEffect, useState } from "react"
 import { Produtos } from "../components/Produtos";
 import { HomeStyle } from "./style";
@@ -15,10 +15,8 @@ function App() {
         .then(res => setProdutos(res.products));
     }, []);
 
-    console.log(produtos[1])
   return (
     <HomeStyle>
-      <Header />
       <PesquisaProduto />
       <main>
         {produtos.map((produto) => (
@@ -28,6 +26,7 @@ function App() {
             title={produto.title}
             descricao={produto.description}
             preco={produto.price}
+            id={produto.id}
           />
         ))}
       </main>

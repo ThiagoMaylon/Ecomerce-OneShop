@@ -3,6 +3,11 @@ import styled from "styled-components";
 export const CardProductStyle = styled.div`
     background-color: #fff;
     padding: 10px;
+
+    a{
+        text-decoration: none;
+        color: #000;
+    }
     img{
         width: 100%;
         height: 250px;
@@ -17,24 +22,9 @@ export const CardProductStyle = styled.div`
             font-size: 1.5em;
             margin-bottom: 5px;
         }
-        p{
-            margin: 5px 0;
-            font-size: 16px;
-            color: #555;
-        }
+
         h3{
             margin-top: 5px;
-        }
-
-        button{
-            width: 100%;
-            height: 50px;
-            margin-bottom: 0;
-            outline: none;
-            background-color: transparent;
-            cursor: pointer;
-            border: 1px solid #000;
-            border-radius: 5px;
         }
 
        

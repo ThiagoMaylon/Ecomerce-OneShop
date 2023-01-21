@@ -4,10 +4,12 @@ export const HeaderStyle = styled.header`
     .constainer{
         font-family: Arial, Helvetica, sans-serif;
         display: flex;
+        /* flex-wrap: wrap; */
         align-items: center;
         justify-content: space-between;
         height: 70px;
-        width: 1200px;
+        max-width: 1200px;
+        min-width: 200px;
         margin: auto;
         padding: 20px 0;
 
