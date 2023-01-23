@@ -1,8 +1,8 @@
 import { useEffect, useState } from "react"
 import { Produtos } from "../components/Produtos";
 import { HomeStyle } from "./style";
-import { Footer } from "../components/Footer";
 import { PesquisaProduto } from "../components/PesquisaProduto";
+import { Footer } from "../components/Footer";
 
 function App() {
   // eslint-disable-next-line

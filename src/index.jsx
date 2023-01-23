@@ -7,6 +7,7 @@ import { Carrinho } from './pages/Carrinho';
 import { DetalheProduto } from './pages/DetalheProduto';
 import { GlobalStyle } from './styles/GlobalStyle';
 
+
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>

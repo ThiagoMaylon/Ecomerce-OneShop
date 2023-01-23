@@ -2,14 +2,19 @@ import styled from "styled-components";
 
 export const DetalheProdutoStyle = styled.div`
     display: flex;
-    align-items: center;
     justify-content: center;
+    align-items: center;
+    /* height: 80vh; */
+    width: 100vw;
+    @media (max-width: 835px) {
+        flex-direction: column;
+    }
 
     .imagem{
-        max-width: 400px;
-        min-width: 200px;
-        margin: 50px 10px;
-
+        height: 100%;
+        padding: 10px;
+        justify-content: center;
+        align-items: center;
         img{
             width: 100%;
         }
@@ -17,6 +22,7 @@ export const DetalheProdutoStyle = styled.div`
 
     .content{
         text-align: center;
+        height: 100%;
         button{
             padding: 10px;
             border: 1px solid #000;
