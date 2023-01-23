@@ -4,15 +4,19 @@ export const HeaderStyle = styled.header`
     .constainer{
         font-family: Arial, Helvetica, sans-serif;
         display: flex;
-        /* flex-wrap: wrap; */
         align-items: center;
         justify-content: space-between;
         height: 70px;
-        max-width: 1200px;
+        max-width: 900px;
         min-width: 200px;
         margin: auto;
         padding: 20px 0;
 
+        @media (max-width: 400px) {
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
         .logo a{
             color: #000;
             text-decoration: none;

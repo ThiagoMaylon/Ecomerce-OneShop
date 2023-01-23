@@ -5,17 +5,17 @@ import { DetalheProdutoStyle } from './style'
 export const DetalheProduto = () => {
     const [produtos, setProdutos] = useState({});
     const { id } = useParams();
-
     useEffect(() => {
         fetch(`https://dummyjson.com/products/${id}`)
           .then(res => res.json())
           .then(res => setProdutos(res));
-
+// eslint-disable-next-line
       }, []);
+
     return(
         <DetalheProdutoStyle>
            <div className="imagem">
-               <img src={produtos.thumbnail} />
+               <img src={produtos.thumbnail} alt={produtos.title}/>
            </div>
            <div className="content">
                 <h1>{produtos.title}</h1>
@@ -23,7 +23,7 @@ export const DetalheProduto = () => {
                     {produtos.description}
                 </p>
                 <h2>R$ {produtos.price},00</h2>
-                <button>Adicionar ao Carrinho</button>
+                <button >Adicionar ao Carrinho</button>
            </div>
         </DetalheProdutoStyle>
     )

@@ -1,4 +1,3 @@
-
 import { useEffect, useState } from "react"
 import { Produtos } from "../components/Produtos";
 import { HomeStyle } from "./style";
